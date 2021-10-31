@@ -1,0 +1,45 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<link href="style.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <a href="" id="link" download="My_Selfie_Taken_By_Anonymous's_Selfie_App.png"></a>
+        <h1>Voice Selfie App 
+     <img src="Joseph.jpg" id="logo_img">
+        </h1>
+        <hr>
+        <h4 style="color:red;">Please press allow as soon as a popup comes to allow microphone and camera. Then you can give a voice command.</h4>
+        
+        <div class="form-group">
+            <h3>Say "Take my selfie" to take a selfie of you and it will download immediately.</h3>
+            <label>Your voice output will be printed in text here.👇🏻 </label>
+            <br>
+            <br>
+          <textarea class="form-control" id="textbox" readonly="true"></textarea>
+        </div>
+       <button class="btn btn-primary" onclick="selfie()">Take A Selfie</button>
+        <p>Press the Start button</p>
+
+        <label>Your webcam : </label>
+      <div id="camera"></div>
+        <br>
+
+        <label>Your selife Will Display Here.👇🏻 </label>
+           <div id="result"></div>
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
